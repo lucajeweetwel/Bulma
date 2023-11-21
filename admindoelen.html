@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Admin</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
+    </head>
+    <body>
+        <nav class="navbar is-white">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item brand-text" href="index.html">
+              Bit Academy Admin
+            </a>
+                    <div class="navbar-burger burger" data-target="navMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div id="navMenu" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item" href="home.html">
+                Home
+              </a>
+                        <a class="navbar-item" href="doelen.html">
+                Dagdoelen
+              </a>
+                        <a class="navbar-item" href="index.html">
+                Admin page
+              </a>
+                    </div>
+      
+                </div>
+            </div>
+        </nav>
+
+        <div class="column is-9">
+            <div class="column is-9">
+                <nav class="breadcrumb" aria-label="breadcrumbs">
+                    <ul>
+                        <li class=""><a href="index.html" aria-current="page">Overzicht</a></li>
+                        <li class="is-active"><a href="admindoelen.html" aria-current="page">Doelen</a></li>
+                    </ul>
+                </nav>
+        </div>
+
+        <div class="card events-card">
+            <header class="card-header">
+                <p class="card-header-title">
+                    Goed/afkeuren
+                </p>
+                <a href="#" class="card-header-icon" aria-label="more options">
+  <span class="icon">
+    <i class="fa fa-angle-down" aria-hidden="true"></i>
+  </span>
+</a>
+            </header>
+            <div class="card-table" >
+                <div class="content">
+                    <table class="table is-fullwidth is-striped">
+                        <tbody id="doelenTabel">
+                            <tr>
+                                <th width="5%"><i class="fa fa-bell-o"></i></th>
+                                <th>Doel</th>
+                                <th>Tijd</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                <td>4 opdrachten html/css beginner</td>
+                                <td>9:00</td>
+                                <td class="level-right"><a class="button is-small is-primary" href="#">Goedkeuren</a> <a class="button is-small is-danger ml-2" href="#">Afkeuren</a></td>
+                            </tr>
+                            <tr>
+                                <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                <td>Web Rookie Eindproject</td>
+                                <td>11:01</td>
+                                <td class="level-right"><a class="button is-small is-primary" href="#">Goedkeuren</a> <a class="button is-small is-danger ml-2 is-mobile mt-2" href="#">Afkeuren</a></td>
+                            </tr>
+                            <tr>
+                                <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                <td>PHP Novice 3 opdrachten</td>
+                                <td>12:07</td>
+                                <td class="level-right"><a class="button is-small is-primary" href="#">Goedkeuren</a> <a class="button is-small is-danger ml-2" href="#">Afkeuren</a></td>
+                            </tr>
+                            <tr>
+                                <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                <td>2 opdrachten Python voor Analisten</td>
+                                <td>16:08</td>
+                                <td class="level-right"><a class="button is-small is-primary" href="#">Goedkeuren</a> <a class="button is-small is-danger ml-2" href="#">Afkeuren</a></td>
+                            </tr>
+                            <tr>
+                                <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                <td>2 opdrachten Bootstrap</td>
+                                <td>10:08</td>
+                                <td class="level-right"><a class="button is-small is-primary" href="#">Goedkeuren</a> <a class="button is-small is-danger ml-2" href="#">Afkeuren</a></td>
+                            </tr>
+                            <tr>
+                                <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                <td>Bootstrap 4 opdrachten</td>
+                                <td>11:16</td>
+                                <td class="level-right"><a class="button is-small is-primary" href="#">Goedkeuren</a> <a class="button is-small is-danger ml-2" href="#">Afkeuren</a></td>
+                            </tr>
+                            <tr>
+                                <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                <td>2 opdrachten JS Novice</td>
+                                <td>12:16</td>
+                                <td class="level-right"><a class="button is-small is-primary" href="#">Goedkeuren</a> <a class="button is-small is-danger ml-2" href="#">Afkeuren</a></td>
+                            </tr>
+                            <tr>
+                                <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                <td>1 opdracht Python voor Analisten</td>
+                                <td>12:24</td>
+                                <td class="level-right"><a class="button is-small is-primary" href="#">Goedkeuren</a> <a class="button is-small is-danger ml-2" href="#">Afkeuren</a></td>
+                            </tr>
+                            <tr>
+                                <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                <td>3 opdrachten HTML/CSS Advanced</td>
+                                <td>13:11</td>
+                                <td class="level-right"><a class="button is-small is-primary" href="#">Goedkeuren</a> <a class="button is-small is-danger ml-2" href="#">Afkeuren</a></td>
+                            </tr>
+                            <tr>
+                                <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                <td>1 opdracht HTML/CSS Advanced</td>
+                                <td>9:29</td>
+                                <td class="level-right"><a class="button is-small is-primary" href="#">Goedkeuren</a> <a class="button is-small is-danger ml-2" href="#">Afkeuren</a></td>
+                            </tr>
+                            <tr>
+                                <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                <td>4 opdrachten JS Beginner</td>
+                                <td>8:30</td>
+                                <td class="level-right"><a class="button is-small is-primary" href="#">Goedkeuren</a> <a class="button is-small is-danger ml-2" href="#">Afkeuren</a></td>
+                            </tr>
+                            <tr>
+                                <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                <td>3 opdrachten Python voor Analisten</td>
+                                <td>8:32</td>
+                                <td class="level-right"><a class="button is-small is-primary" href="#">Goedkeuren</a> <a class="button is-small is-danger ml-2" href="#">Afkeuren</a></td>
+                            </tr>
+                            <tr>
+                                <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                <td>2 opdrachten JS Novice</td>
+                                <td>9:33</td>
+                                <td class="level-right"><a class="button is-small is-primary" href="#">Goedkeuren</a> <a class="button is-small is-danger ml-2" href="#">Afkeuren</a></td>
+                            </tr>
+                            <tr>
+                                <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                <td>1 opdracht Bootstrap</td>
+                                <td>10:37</td>
+                                <td class="level-right"><a class="button is-small is-primary" href="#">Goedkeuren</a> <a class="button is-small is-danger ml-2" href="#">Afkeuren</a></td>
+                            </tr>
+                            <tr>
+                                <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                <td>Recap HTML/CSS/JS</td>
+                                <td>10:42</td>
+                                <td class="level-right"><a class="button is-small is-primary" href="#">Goedkeuren</a> <a class="button is-small is-danger ml-2" href="#">Afkeuren</a></td>
+                            </tr>
+                            <tr>
+                                <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                <td>Trial HTML/CSS Beginner</td>
+                                <td>10:46</td>
+                                <td class="level-right"><a class="button is-small is-primary" href="#">Goedkeuren</a> <a class="button is-small is-danger ml-2" href="#">Afkeuren</a></td>
+                            </tr>
+                            <tr>
+                                <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                <td>2 opdrachten C# Beginner</td>
+                                <td>11:04</td>
+                                <td class="level-right"><a class="button is-small is-primary" href="#">Goedkeuren</a> <a class="button is-small is-danger ml-2" href="#">Afkeuren</a></td>
+                            </tr>
+                            <tr>
+                                <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                <td>4 opdrachten PHP Web</td>
+                                <td>9:55</td>
+                                <td class="level-right"><a class="button is-small is-primary" href="#">Goedkeuren</a> <a class="button is-small is-danger ml-2" href="#">Afkeuren</a></td>
+                            </tr>
+                            <tr>
+                                <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                <td>1 opdracht PHP Together</td>
+                                <td>13:00</td>
+                                <td class="level-right"><a class="button is-small is-primary" href="#">Goedkeuren</a> <a class="button is-small is-danger ml-2" href="#">Afkeuren</a></td>
+                            </tr>
+                            <tr>
+                                <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                <td>2 opdrachten Python voor Analisten</td>
+                                <td>12:04</td>
+                                <td class="level-right"><a class="button is-small is-primary" href="#">Goedkeuren</a> <a class="button is-small is-danger ml-2" href="#">Afkeuren</a></td>
+                            </tr>
+                            <tr>
+                                <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                <td>5 opdrachen HTML/CSS Beginner</td>
+                                <td>12:18</td>
+                                <td class="level-right"><a class="button is-small is-primary" href="#">Goedkeuren</a> <a class="button is-small is-danger ml-2" href="#">Afkeuren</a></td>
+                            </tr>
+                            <tr>
+                                <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                <td>3 opdrachten JS Beginner</td>
+                                <td>8:33</td>
+                                <td class="level-right"><a class="button is-small is-primary" href="#">Goedkeuren</a> <a class="button is-small is-danger ml-2" href="#">Afkeuren</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+        
+              const burger = document.querySelector('.navbar-burger');
+              const menu = document.querySelector('.navbar-menu');
+        
+              burger.addEventListener('click', () => {
+                burger.classList.toggle('is-active');
+                menu.classList.toggle('is-active');
+              })
+            })
+          </script>
+    </body>
+</html>

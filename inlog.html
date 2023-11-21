@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Log in</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
+    </head>
+    <body>
+        <nav class="navbar is-white">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item brand-text" href="index.html">
+              Bit Academy Admin
+            </a>
+                    <div class="navbar-burger burger" data-target="navMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div id="navMenu" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item" href="home.html">
+                Home
+              </a>
+                        <a class="navbar-item" href="doelen.html">
+                Dagdoelen
+              </a>
+                        <a class="navbar-item" href="inlog.html">
+                Admin page
+              </a>
+                    </div>
+      
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero is-warning is-fullheight">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns is-centered">
+                        <div class="column is-5-tablet is-4-desktop is-3-widescreen">
+                            <form action="index.html" class="box" id="loginForm">
+                                <div class="field">
+                                    <label for="" class="label">Gebruikersnaam</label>
+                                    <div class="control has-icons-left">
+                                        <input id="username" type="text" placeholder="Naam" class="input" required>
+                                        <span class="icon is-small is-left">
+                                            <i class="fa fa-envelope"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label for="" class="label">Wachtwoord</label>
+                                    <div class="control has-icons-left">
+                                        <input id="password" type="password" placeholder="*******" class="input" required>
+                                        <span class="icon is-small is-left">
+                                            <i class="fa fa-lock"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label for="" class="checkbox">
+                                        <input type="checkbox"> Onthoud mij
+                                    </label>
+                                </div>
+                                <div class="field">
+                                    <button type="button" class="button is-success" onclick="Form()">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+          <script>
+            document.addEventListener('DOMContentLoaded', () => {
+
+            const burger = document.querySelector('.navbar-burger');
+            const menu = document.querySelector('.navbar-menu');
+
+            burger.addEventListener('click', () => {
+            burger.classList.toggle('is-active');
+            menu.classList.toggle('is-active');
+            
+            });
+        });
+
+
+            function Form() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            if (username == "admin" && password == "admin") {
+                document.getElementById("loginForm").submit();
+            }  else if (username == "" && password == "") {
+                alert("Vul alle velden in.");
+            }   else if (username != 'admin' && password != 'admin') {
+                alert("Gebruikersnaam of wachtwoord onjuist");
+            }
+    }
+          </script>
+    </body>
+</html>

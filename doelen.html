@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Je doelen</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
+    </head>
+    <body>
+        <nav class="navbar is-white">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item brand-text" href="home.html">
+              Bit Academy
+            </a>
+                    <div class="navbar-burger burger" data-target="navMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div id="navMenu" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item" href="home.html">
+                Home
+              </a>
+                        <a class="navbar-item" href="doelen.html">
+                Dagdoelen
+              </a>
+                        <a class="navbar-item" href="inlog.html">
+                Admin page
+              </a>
+                    </div>
+      
+                </div>
+            </div>
+        </nav>
+        <div class="m-5">
+            <span class="icon">
+                <i class="fas fa-reply has-text-info m-2"></i>
+                <a href="home.html">Terug</a>
+            </span>
+
+        </div>
+        <div style="margin: 20px;">
+        <div class="field" >
+            <label class="label">Doel</label>
+            <div class="control">
+              <input class="input" id="doel" type="text" placeholder="Typ hier je doel!">
+            </div>
+          </div>
+          
+          <div class="field">
+            <label class="label">Tijd</label>
+            <div class="control">
+              <input class="input" id="tijd" type="time" placeholder="Typ hier je tijd!">
+            </div>
+          </div>
+          
+          <div class="field is-grouped">
+            <div class="control">
+              <button class="button is-link" onclick="resultaatDoel()">Submit</button>
+            </div>
+          </div>
+
+          <div id="resultaat1">
+
+          </div>
+          <div id="resultaat2" class="">
+
+          </div>
+        </div>
+
+        <script>
+            
+            function resultaatDoel() {
+                const resultaat1 = document.getElementById("resultaat1");
+                const resultaat2 = document.getElementById("resultaat2");
+                const doel = document.getElementById("doel").value;
+                const tijd = document.getElementById("tijd").value;
+
+                if (doel == '' || tijd == '') {
+                    alert('Vul alle velden in');
+                } else {
+                    resultaat1.innerHTML = `<h1 class="subtitle">Doel:</h1> <p>${doel}</p>`;
+                    resultaat2.innerHTML = `<h1 class="subtitle">Tijd:</h1> <p>${tijd}</p>`;
+                    
+                }
+            }
+            
+
+           document.addEventListener('DOMContentLoaded', () => {
+        
+            const burger = document.querySelector('.navbar-burger');
+            const menu = document.querySelector('.navbar-menu');
+  
+            burger.addEventListener('click', () => {
+                burger.classList.toggle('is-active');
+                menu.classList.toggle('is-active');
+        })
+      }) 
+        </script>
+        <script src=
+        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js'>
+            </script>
+    </body>
+</html>

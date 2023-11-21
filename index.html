@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <title>Admin</title>
+  <style>
+    body { padding: 20px; }
+  </style>
+</head>
+<body>
+    <nav class="navbar is-white">
+      <div class="container">
+          <div class="navbar-brand">
+              <a class="navbar-item brand-text" href="index.html">
+        Bit Academy Admin
+      </a>
+              <div class="navbar-burger burger" data-target="navMenu">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+          </div>
+          <div id="navMenu" class="navbar-menu">
+              <div class="navbar-start">
+                  <a class="navbar-item" href="home.html">
+          Home
+        </a>
+                  <a class="navbar-item" href="doelen.html">
+          Dagdoelen
+        </a>
+                  <a class="navbar-item" href="index.html">
+          Admin page
+        </a>
+              </div>
+
+          </div>
+      </div>
+  </nav>
+
+  <div class="container">
+      <div class="columns">
+          <div class="column is-3 ">
+              <aside class="menu is-hidden-mobile">
+                  <p class="menu-label">
+                      General
+                  </p>
+                  <ul class="menu-list">
+                      <li><a class="is-active">Overzicht</a></li>
+                      <li><a href="doelen.html">Dagdoelen</a></li>
+                  </ul>
+              </aside>
+          </div>
+          <div class="column is-9">
+              <nav class="breadcrumb" aria-label="breadcrumbs">
+                  <ul>
+                      <li class="is-active title"><a href="index.html" aria-current="page">Overzicht</a></li>
+                  </ul>
+              </nav>
+              <section class="hero is-info welcome is-small">
+                  <div class="hero-body">
+                      <div class="container">
+                          <h1 class="title">
+                              Hallo, Admin.
+                          </h1>
+                          <h2 class="subtitle">
+                              Ik wens je een fijne dag!
+                          </h2>
+                      </div>
+                  </div>
+              </section>
+              <section class="info-tiles">
+                  <div class="tile is-ancestor has-text-centered">
+                      <div class="tile is-parent">
+                          <article class="tile is-child box">
+                              <p class="title">98</p>
+                              <p class="subtitle">Gebruikers</p>
+                          </article>
+                      </div>
+                      <div class="tile is-parent">
+                          <article class="tile is-child box">
+                              <p class="title">22</p>
+                              <p class="subtitle">Openstaande verzoeken</p>
+                          </article>
+                      </div>
+                      <div class="tile is-parent">
+                          <article class="tile is-child box">
+                              <p class="title">864</p>
+                              <p class="subtitle">Totale verzoeken</p>
+                          </article>
+                      </div>
+                  </div>
+              </section>
+              <div class="columns">
+                  <div class="column is-6">
+                      <div class="card events-card">
+                          <header class="card-header">
+                              <p class="card-header-title">
+                                  Goed/afkeuren
+                              </p>
+                              <a href="#" class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </span>
+                              </a>
+                          </header>
+                          <div class="card-table">
+                              <div class="is-align-content-center">
+                                  <table class="table is-fullwidth is-striped">
+                                      <tbody>
+                                        <tr>
+                                          <th width="5%"><i class="fa fa-bell-o"></i></th>
+                                          <th>Doel</th>
+                                          <th>Tijd</th>
+                                          <th></th>
+                                        </tr>
+                                          <tr>
+                                              <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                              <td>4 opdrachten html/css beginner</td>
+                                              <td>9:00</td>
+                                              <td class="level-right"><a class="button is-small is-primary" href="#">Goedkeuren</a> <a class="button is-small is-danger ml-2" href="#">Afkeuren</a></td>
+                                          </tr>
+                                          <tr>
+                                              <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                              <td>Web Rookie Eindproject</td>
+                                              <td>11:01</td>
+                                              <td class="level-right"><a class="button is-small is-primary" href="#">Goedkeuren</a> <a class="button is-small is-danger ml-2" href="#">Afkeuren</a></td>
+                                          </tr>
+                                          <tr>
+                                              <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                              <td>PHP Novice 3 opdrachten</td>
+                                              <td>12:07</td>
+                                              <td class="level-right"><a class="button is-small is-primary" href="#">Goedkeuren</a> <a class="button is-small is-danger ml-2" href="#">Afkeuren</a></td>
+                                          </tr>
+                                          <tr>
+                                              <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                              <td>2 opdrachten Python voor Analisten</td>
+                                              <td>16:08</td>
+                                              <td class="level-right"><a class="button is-small is-primary" href="#">Goedkeuren</a> <a class="button is-small is-danger ml-2" href="#">Afkeuren</a></td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                              </div>
+                          </div>
+                          <footer class="card-footer">
+                              <a href="admindoelen.html" class="card-footer-item">Bekijk alle</a>
+                          </footer>
+                      </div>
+                  </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      const burger = document.querySelector('.navbar-burger');
+      const menu = document.querySelector('.navbar-menu');
+
+      burger.addEventListener('click', () => {
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+      })
+    })
+  </script>
+
+</body>
+</html>

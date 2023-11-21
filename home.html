@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
+    </head>
+    <body>
+        <nav class="navbar is-white">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item brand-text" href="home.html">
+              Bit Academy
+            </a>
+                    <div class="navbar-burger burger" data-target="navMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div id="navMenu" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item" href="home.html">
+                Home
+              </a>
+                        <a class="navbar-item" href="doelen.html">
+                Dagdoelen
+              </a>
+                        <a class="navbar-item" href="inlog.html">
+                Admin page
+              </a>
+                    </div>
+      
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero is-info welcome is-small">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title has-text-centered">
+                        Hallo, Student.
+                    </h1>
+                    <h2 class="subtitle has-text-centered">
+                        Vul je doelen in voor vandaag!
+                    </h2>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="card">
+                <div class="card-content">
+                  <p class="title has-text-centered">
+                    Klik hieronder om je doelen voor de dag in te vullen!
+                  </p>
+                </div>
+                <footer class="card-footer">
+                  <p class="card-footer-item">
+                    <span>
+                       <a href="doelen.html" class="subtitle">Klik hier!</a>
+                    </span>
+                  </p>
+                </footer>
+              </div>
+        </section>
+        <section>
+            <div class="card">
+                <div class="card-content">
+                    <p class="title has-text-centered">
+                        Doel van vandaag
+                    </p>
+                    <p class="subtitle has-text-centered">
+                        2 opdrachten HTML/CSS Advanced
+                    </p>
+                    <p class="has-text-centered">
+                        8:33-15:03
+                    </p>
+                </div>
+            </div>
+        </section>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+        
+        const burger = document.querySelector('.navbar-burger');
+        const menu = document.querySelector('.navbar-menu');
+  
+        burger.addEventListener('click', () => {
+          burger.classList.toggle('is-active');
+          menu.classList.toggle('is-active');
+        })
+      })
+        </script>
+    </body>
+</html>
